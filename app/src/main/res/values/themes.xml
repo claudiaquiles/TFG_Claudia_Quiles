@@ -1,0 +1,15 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- base theme -->
+    <style name="Theme.BreathOS" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- colors -->
+        <item name="colorPrimary">@color/borde</item>
+        <item name="colorOnPrimary">@color/texto</item>
+        <item name="colorSecondary">@color/fondoboton</item>
+
+        <!-- button style -->
+        <item name="materialButtonStyle">@style/SquareMaterialButton</item>
+    </style>
+
+</resources>

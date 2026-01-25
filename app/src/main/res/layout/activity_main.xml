@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#E0F0FF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtClasificacion"
+            android:layout_width="270dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_margin"
+            android:fontFamily="@font/baloo_tamma"
+            android:gravity="center"
+            android:text="MODE: -"
+            android:textAlignment="viewStart"
+            android:textColor="@color/texto"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtEvent"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/text_margin"
+            android:fontFamily="@font/baloo_tamma"
+            android:text="No events"
+            android:textAlignment="center"
+            android:textColor="#3A8CBC"
+            android:textSize="16sp" />
+
+
+
+        <!-- graph -->
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/graph_margin" />
+
+        <!-- Buttons -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:stretchColumns="0,1">
+
+            <TableRow>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNormal"
+                    style="@style/SquareMaterialButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regular"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTos"
+                    style="@style/SquareMaterialButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cough"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAcelerada"
+                    style="@style/SquareMaterialButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fast"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBiot"
+                    style="@style/SquareMaterialButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biot"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLenta"
+                    style="@style/SquareMaterialButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slow"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCheyne"
+                    style="@style/SquareMaterialButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cheyne-Stokes"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnApnea"
+                    style="@style/SquareMaterialButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apnea"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPause"
+                    style="@style/SquareMaterialButton.Pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pause / Replay"
+                    android:textColor="#E5F2F6"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
